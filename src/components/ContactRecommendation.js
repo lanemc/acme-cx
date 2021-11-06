@@ -15,7 +15,7 @@ const ContactRecommendation = () => {
 
   return (
     <div className="weather__info">
-      Weather info
+      Weather info for {forecast.city.name}
     </div>
   )
 }
