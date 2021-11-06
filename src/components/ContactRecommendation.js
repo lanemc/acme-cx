@@ -13,6 +13,7 @@ const ContactRecommendation = () => {
     getCurrentForecast()
   },[])
 
+  console.log(forecast)
   return (
     <div className="weather__info">
       Weather info
