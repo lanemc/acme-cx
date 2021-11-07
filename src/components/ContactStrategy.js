@@ -33,7 +33,7 @@ const ContactStrategy = () => {
 
   return (
     <>
-      Forecast for {forecast?.city?.name}
+      <h3>Forecast for Minneapolis</h3>
       {forecast && <RecommendationTable forecast={forecast} />}
     </>
   )
