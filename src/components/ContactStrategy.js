@@ -3,7 +3,7 @@ import getWeatherForecast from '../services/getWeatherForecast'
 import RecommendationTable from './RecommendationTable'
 
 const ContactStrategy = () => {
-  const [forecast, setForecast] = useState({})
+  const [forecast, setForecast] = useState()
 
   useEffect(() => {
     async function getFiveDayForecast() {
