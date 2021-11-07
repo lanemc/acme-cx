@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/acme-cx/static/js/main.40103041.chunk.js",
+    "main.js.map": "/acme-cx/static/js/main.40103041.chunk.js.map",
+    "runtime-main.js": "/acme-cx/static/js/runtime-main.50d24d71.js",
+    "runtime-main.js.map": "/acme-cx/static/js/runtime-main.50d24d71.js.map",
+    "static/js/2.5aaba3b0.chunk.js": "/acme-cx/static/js/2.5aaba3b0.chunk.js",
+    "static/js/2.5aaba3b0.chunk.js.map": "/acme-cx/static/js/2.5aaba3b0.chunk.js.map",
+    "index.html": "/acme-cx/index.html",
+    "static/js/2.5aaba3b0.chunk.js.LICENSE.txt": "/acme-cx/static/js/2.5aaba3b0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50d24d71.js",
+    "static/js/2.5aaba3b0.chunk.js",
+    "static/js/main.40103041.chunk.js"
+  ]
+}
