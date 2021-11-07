@@ -6,17 +6,23 @@ const ContactStrategy = () => {
   const [forecast, setForecast] = useState()
 
   useEffect(() => {
-    async function getFiveDayForecast() {
-      const currentForecast = await getWeatherForecast()
-      const weatherByTime = currentForecast.list?.map(time => ({
-        dateTime: time?.dt_txt,
-        temp: parseInt(time?.main?.temp),
-        weather: time?.weather[0]?.main,
-        contactType: getContactType(parseInt(time?.main?.temp), time?.weather[0]?.main),
-      }))
-      setForecast(weatherByTime)
+    async function fiveDayForecast() {
+      try {
+        const currentForecast = await getWeatherForecast()
+        const weatherByTime = currentForecast.list?.map(time => ({
+          dateTime: time?.dt_txt,
+          temp: parseInt(time?.main?.temp),
+          weather: time?.weather[0]?.main,
+          contactType: getContactType(parseInt(time?.main?.temp), time?.weather[0]?.main),
+        }))
+        setForecast(weatherByTime)
+        console.log("forecast", forecast)
+      } catch (error) {
+        // eslint-disable-next-line no-console
+        console.log(error)
+      }
     }
-    getFiveDayForecast()
+    fiveDayForecast()
   },[])
 
   const getContactType = (temperature, weather) => {
