@@ -24,7 +24,7 @@ const ContactStrategy = () => {
       return "text message"
     } else if (temperature > 55 && temperature < 75) {
       return "email"
-    } else if (temperature < 55 && weather === "Rain") {
+    } else if (temperature < 55 || weather === "Rain") {
       return "phone call"
     } else {
       return "No recommendation"
