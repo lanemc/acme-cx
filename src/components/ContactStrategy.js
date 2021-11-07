@@ -23,7 +23,7 @@ const ContactStrategy = () => {
       }
     }
     fiveDayForecast()
-  },[])
+  },[forecast])
 
   const getContactType = (temperature, weather) => {
     if (temperature > 75 && weather === "Clear") {
