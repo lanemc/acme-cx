@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.js": "/acme-cx/static/js/main.40103041.chunk.js",
-    "main.js.map": "/acme-cx/static/js/main.40103041.chunk.js.map",
+    "main.css": "/acme-cx/static/css/main.4c76317e.chunk.css",
+    "main.js": "/acme-cx/static/js/main.a5b2746f.chunk.js",
+    "main.js.map": "/acme-cx/static/js/main.a5b2746f.chunk.js.map",
     "runtime-main.js": "/acme-cx/static/js/runtime-main.50d24d71.js",
     "runtime-main.js.map": "/acme-cx/static/js/runtime-main.50d24d71.js.map",
-    "static/js/2.5aaba3b0.chunk.js": "/acme-cx/static/js/2.5aaba3b0.chunk.js",
-    "static/js/2.5aaba3b0.chunk.js.map": "/acme-cx/static/js/2.5aaba3b0.chunk.js.map",
+    "static/js/2.6f65dab7.chunk.js": "/acme-cx/static/js/2.6f65dab7.chunk.js",
+    "static/js/2.6f65dab7.chunk.js.map": "/acme-cx/static/js/2.6f65dab7.chunk.js.map",
     "index.html": "/acme-cx/index.html",
-    "static/js/2.5aaba3b0.chunk.js.LICENSE.txt": "/acme-cx/static/js/2.5aaba3b0.chunk.js.LICENSE.txt"
+    "static/css/main.4c76317e.chunk.css.map": "/acme-cx/static/css/main.4c76317e.chunk.css.map",
+    "static/js/2.6f65dab7.chunk.js.LICENSE.txt": "/acme-cx/static/js/2.6f65dab7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.50d24d71.js",
-    "static/js/2.5aaba3b0.chunk.js",
-    "static/js/main.40103041.chunk.js"
+    "static/js/2.6f65dab7.chunk.js",
+    "static/css/main.4c76317e.chunk.css",
+    "static/js/main.a5b2746f.chunk.js"
   ]
 }
