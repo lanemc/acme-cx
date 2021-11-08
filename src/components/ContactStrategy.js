@@ -16,7 +16,6 @@ const ContactStrategy = () => {
           contactType: getContactType(parseInt(time?.main?.temp), time?.weather[0]?.main),
         }))
         setForecast(weatherByTime)
-        console.log("forecast", forecast)
       } catch (error) {
         // eslint-disable-next-line no-console
         console.log(error)

@@ -12,7 +12,7 @@ import {
 const RecommendationTable = ({ forecast }) => (
   <TableContainer component={Paper}>
     <Table sx={{ minWidth: 650 }} aria-label="recommendation calendar">
-      <TableHead style={{ backgroundColor: "#EEE" }}>
+      <TableHead sx={{ backgroundColor: "#EEE" }}>
         <TableRow>
           <TableCell>Date/Time</TableCell>
           <TableCell align="right">Temp</TableCell>
