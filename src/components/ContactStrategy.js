@@ -23,7 +23,7 @@ const ContactStrategy = () => {
       }
     }
     fiveDayForecast()
-  },[forecast])
+  },[]) //eslint-disable-line react-hooks/exhaustive-deps
 
   const getContactType = (temperature, weather) => {
     if (temperature > 75 && weather === "Clear") {
@@ -39,7 +39,6 @@ const ContactStrategy = () => {
 
   return (
     <>
-      <h3>Forecast for Minneapolis</h3>
       {forecast && <RecommendationTable forecast={forecast} />}
     </>
   )

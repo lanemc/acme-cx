@@ -1,22 +1,42 @@
 import React from 'react'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+} from '@mui/material'
 
 const RecommendationTable = ({ forecast }) => (
-  <table>
-    <tr>
-      <th>Date/Time</th>
-      <th>Temp</th>
-      <th>Weather</th>
-      <th>Contact Type</th>
-    </tr>
-    {forecast.hasOwnProperty(0) && forecast.map(data =>
-      <tr>
-        <td>{data.dateTime}</td>
-        <td>{data.temp}</td>
-        <td>{data.weather}</td>
-        <td>{data.contactType}</td>
-      </tr>
-    )}
-  </table>
+  <TableContainer component={Paper}>
+    <Table sx={{ minWidth: 650 }} aria-label="recommendation calendar">
+      <TableHead style={{ backgroundColor: "#EEE" }}>
+        <TableRow>
+          <TableCell>Date/Time</TableCell>
+          <TableCell align="right">Temp</TableCell>
+          <TableCell align="right">Weather</TableCell>
+          <TableCell align="right">Contact Type</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {forecast.hasOwnProperty(0) && forecast.map(data => (
+          <TableRow
+            key={data.dateTime}
+            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+          >
+            <TableCell component="th" scope="row">
+              {data.dateTime}
+            </TableCell>
+            <TableCell align="right">{data.temp}</TableCell>
+            <TableCell align="right">{data.weather}</TableCell>
+            <TableCell align="right">{data.contactType}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </Table>
+  </TableContainer>
 )
 
 
